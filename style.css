@@ -125,10 +125,8 @@
 		  .nav-links {
 			display: flex;
 			list-style: none;
-			
 			margin-left: auto;
 			margin-right: auto;
-			
 			border-radius: 35px;
 			height: 40px;
 			align-items: center;
@@ -145,12 +143,11 @@
 		  }
 		  .nav-links a {
 			text-decoration: none;
-			font-size: 1.1rem;
+			font-size: 16px;
 			font-weight: bold;
 			color: black;
 			padding: 21px 8px;
 			border-radius: 50px;
-			
 			transition: transform 0.9s ease, background-color 0.9s ease;
 		  }
 
@@ -509,7 +506,7 @@
 		  }
 		  .slide {
 			min-width: 200px;
-			height: 160px;
+			height: 200px;
 			margin: 0 10px;
 			background-size: cover;
 			background-position: center;
@@ -527,14 +524,15 @@
 			z-index: 2;
 		  }
 		  .slide h1{
-			font-size: 15px;
+			font-size: 18px;
 			margin-top: 8px;
 		  }
-		  .slide h4{
-			font-size: 10px;
+		  .slide p{
+			font-size: 14px;
 			margin-top: 3px;
 			margin-bottom: 10px;
-			padding: 1px;
+			padding: 3px;
+			color: #353535;
 		  }
 		  
 		  .controls {
@@ -558,7 +556,6 @@
 		  .arrow:hover {
 			background-color: rgba(0, 0, 0, 0.8);
 		  }
-	  
 		  @media (min-width:846px) and (max-width:1070px){
 			.slider-container {
 			display: flex;
@@ -588,9 +585,10 @@
 			font-size: 28px;
 			margin-top: 35px;
 		  }
-		  .slide h4{
+		  .slide p{
 			font-size: 14px;
 			margin-top: 10px;
+			color: #353535;
 
 		  }
 		  .slide.active {
@@ -615,17 +613,6 @@
 			transform: translateY(0%);
 			margin-left: 520px;
 			gap: 10px;
-		  }
-		  .slider-p{
-			position: absolute;
-			top: 85%;
-			display: flex;
-			justify-content: center;
-			transform: translateY(-50%);
-			margin-left: 650px;
-			font-size: 20px;
-			color: #353535;
-			text-align: left;
 		  }
 		  .arrow {
 			background-color: rgb(0, 0, 0);
@@ -672,7 +659,7 @@
 			font-size: 28px;
 			margin-top: 35px;
 		  }
-		  .slide h4{
+		  .slide p{
 			font-size: 15px;
 			margin-top: 10px;
 
@@ -699,17 +686,6 @@
 			transform: translateY(0%);
 			margin-left: 530px;
 			gap: 40px;
-		  }
-		  .slider-p{
-			position: absolute;
-			top: 85%;
-			display: flex;
-			justify-content: center;
-			transform: translateY(-50%);
-			margin-left: 750px;
-			font-size: 20px;
-			color: #353535;
-			text-align: left;
 		  }
 		  .arrow {
 			background-color: rgb(0, 0, 0);
@@ -786,12 +762,23 @@
 				margin-top: 100px;
 			}
 		  }
+		  @media (max-width:333px){
+			.ok{
+				margin-top: 180px;
+			}
+		  }
 		  .easy-hire> i {
 			font-size: 24px;
 			color: blue;
 		  }
 		  .hire-icon{
 			margin-top: 0px;
+			font-size: 30px;
+		  }
+		  @media (max-width: 768px) {
+			.hire-icon{
+				font-size: 20px;
+			}
 		  }
 		  .easy-hire {
 			display: flex;
@@ -803,11 +790,7 @@
 			margin-right: auto;
 			border-radius: 20px;
 		  }
-		  .hire-text h3{
-			font-size: 34px;
-			padding: 0;
-			line-height: 1.2;
-		  }
+
 		  .easy-hire-img {
 			width: 50%;
 			display: flex;
@@ -851,15 +834,26 @@
 		  .hire-text h3 {
 			margin-bottom: 6px;
 			font-size: 24px;
+			font-weight: 20px;
+			padding: 0;
+			line-height: 1.2;
 		  }
 	  
 		  .hire-text p {
 			margin-top: 0;
-			font-size: 20px;
+			font-size: 18px;
 			color: #353535;
 			line-height: 1.2;
 		  }
-
+		  @media (max-width: 768px) {  /* For mobile */
+			.hire-text h3{
+				font-size: 18px;
+				font-weight:1200;
+			}
+			.hire-text p{
+				font-size: 14px;
+			}
+		  }
 /* HEIE OPTIONS */
 		  .clientoption-image{
 			width: 100%;
@@ -873,7 +867,7 @@
 			align-items: center;
 			justify-content: center;
 			gap: 40px;
-			width: 98%;
+			width: 100%;
 			margin-left: auto;
 			margin-right: auto;
 			overflow: hidden;
@@ -901,7 +895,7 @@
 		  }
 		  .client-child {
 			position: absolute; /* Positioned relative to .client-options */
-			bottom: -1.5rem;
+			bottom: -2.5rem;
 			right: 0rem;
 			max-width: 10rem;
 			border-radius: 60px;
@@ -921,7 +915,10 @@
 		  }
 
 		  .client-options h1{
-			font-size: 3.2vw;
+			font-size: 24px;
+		  }
+		  .client-options p{
+			font-size: 18px;
 		  }
 		  .client-choice{
 			margin-top: 150px;
@@ -936,7 +933,7 @@
 			gap: 15px;
 		  }
 		  .client-options h1{
-			font-size: 20px;
+			font-size: 18px;
 		  }
 		  .client-options {
 			text-align: left;
@@ -944,10 +941,13 @@
 		  .client-choice{
 			margin-top: 100px;
 		  }
+		  .client-options p{
+			font-size: 14px;
+		  }
 		  }
 		  @media (max-width:350px){
 			.client-options h1{
-				font-size: 12px;
+				font-size: 18px;
 			}
 		  }
 
@@ -996,7 +996,7 @@
 
 
 		  .faq-container {
-			width: 95%;
+			width: 100%;
 			margin: 70px auto;
 			padding: 20px;
 			background: #d3bdff;
@@ -1007,7 +1007,7 @@
 		  .faq-container h1 {
 			text-align: center;
 			color: #000000;
-			font-size: 45px;
+			font-size: 40px;
 			margin-bottom: 40px;
 			line-height: 1.2;
 		  }
@@ -1026,7 +1026,7 @@
 		  
 		  .question h3 {
 			margin: 0;
-			font-size: 25px;
+			font-size: 24px;
 			color: #3b1e54;
 			line-height: 1.2;
 		  }
@@ -1051,9 +1051,10 @@
 		  .answer p {
 			margin: 0;
 			font-weight: 600;
-			color: #0e0023;
+			color: #353535;
 			line-height: 1.5;
 			margin-top: 20px;
+			font-size: 18px;
 		  }
 		  
 		  .faq-item.active .answer {
@@ -1064,4 +1065,15 @@
 		  .faq-item.active .toggle-btn {
 			transform: rotate(45deg);
 			color: #4a00b9;
+		  }
+		  @media (max-width: 768px) {  /* For mobile */
+			.question h3 {
+				font-size: 18px;
+			}
+			.answer p{
+				font-size: 14px;
+			}
+			.faq-container h1 {
+				font-size: 30px;
+			  }
 		  }
